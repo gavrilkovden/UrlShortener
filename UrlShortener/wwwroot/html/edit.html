@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Создать / Редактировать ссылку</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <h1>Создать / Редактировать ссылку</h1>
+    <form id="urlForm">
+        <input type="hidden" id="id" />
+        <label for="originalUrl">Длинный URL:</label>
+        <input type="url" id="originalUrl" required placeholder="https://example.com" style="width: 400px;" />
+        <button type="submit">Сохранить</button>
+        <button type="button" onclick="window.location.href='index.html'">Отмена</button>
+    </form>
+
+    <script src="../js/edit.js"></script>
+</body>
+</html>
+

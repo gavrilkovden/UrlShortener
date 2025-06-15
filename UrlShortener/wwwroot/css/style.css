@@ -1,0 +1,19 @@
+﻿table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    max-width: 300px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+}
