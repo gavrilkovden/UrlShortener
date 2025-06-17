@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using UrlShortener.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,8 +25,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
 app.UseStaticFiles();
-app.UseDefaultFiles(); 
 app.UseAuthorization();
 
 app.MapControllers();
